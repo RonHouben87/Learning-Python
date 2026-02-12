@@ -27,6 +27,7 @@ for i in range(1,limit + 1):
 
 print("Welcome to FizzBuzz!")
 
+# Declaring the function
 def fizzbuzz(number):
     result = ""
     if number % 3 == 0:
@@ -34,7 +35,7 @@ def fizzbuzz(number):
     if number % 7 == 0:
         result += "Buzz"
     if result == "":
-        if "3" in str(number):
+        if "3" in str(number):    # check for number 3 in the str(int())
             result = "Almost Fizz"
         else:
             result = str(number)
